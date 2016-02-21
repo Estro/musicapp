@@ -1,0 +1,26 @@
+.loader {
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.container {
+	width:100%;
+	position: relative;
+
+	&.padded{
+		padding:20px;
+	}
+
+	&.fullscreen{
+		height: 100%;
+	}
+
+	&.centred {
+		text-align: center;
+	}
+
+	.large-top-margin{
+		margin-top: 80px;
+	}
+}

@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc function
- * @name IonicGulpSeed.controller:SettingsController
+ * @name MusicApp.controller:SettingsController
  * @description
  * # SettingsController
  */
-angular.module('IonicGulpSeed')
+angular.module('MusicApp')
     .controller('SettingsController', function($scope) {
 
         // do something with $scope

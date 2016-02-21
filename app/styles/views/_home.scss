@@ -1,0 +1,57 @@
+.header {}
+
+.content {
+    padding: 1rem;
+}
+
+.scroll {
+    height: 100%;
+}
+
+.map-container {
+    height: 100%;
+    position: relative;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.event-details {
+    width: 100%;
+    bottom: -45%;
+    background: #FFF;
+    height: 60%;
+    padding: 10px 20px;
+    color: #FFF;
+    position: absolute;
+
+    &.open {
+        bottom: 0;
+    }
+
+    h2 {
+        color: #e36f58;
+    }
+
+    .icon.ion-eye {
+        background: #00bc66;
+        font-size: 25px;
+        padding: 8px 9px;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        display: block;
+        position: absolute;
+        top: -18px;
+        right: 25px;
+        border: 5px solid #FFF;
+        cursor: pointer;
+
+        &:hover {
+            background: #028C4D;
+        }
+    }
+}
+

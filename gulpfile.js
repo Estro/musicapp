@@ -1,7 +1,7 @@
 'use strict';
 
 // change this to your app's name (angular module)
-var appName = 'IonicGulpSeed';
+var appName = 'MusicApp';
 
 
 var gulp = require('gulp');
@@ -22,7 +22,7 @@ var KarmaServer = require('karma').Server;
 var spawn = require('child_process').spawn;
 var Promise = require('bluebird');
 
-// this is the express server which 
+// this is the express server which
 // will be initiated when gulp serve
 var server = null;
 
@@ -347,7 +347,7 @@ gulp.task('test-e2e', ['default'], function(){
   return new Promise(function(resolve, reject){
     /**
      * Steps:
-     * 1. webdriver-manager update: to make sure the standalone 
+     * 1. webdriver-manager update: to make sure the standalone
      *      selenium driver is downloaded to be used
      * 2. webdriver-manager start: to start selenium driver
      * 3. run protractor test cases
@@ -356,10 +356,10 @@ gulp.task('test-e2e', ['default'], function(){
 
     var webdriverUpdate = spawn('node', [webdriverBinary, 'update'], {stdio: 'inherit'})
       .once('close', function(){
-        var webdriverProcess = spawn('node', 
-                        [webdriverBinary, 'start'], 
+        var webdriverProcess = spawn('node',
+                        [webdriverBinary, 'start'],
                         {stdio: 'inherit'});
-     
+
         setTimeout(function(){
 
           var stream = gulp.src('test/e2e/**/*.spec.js').
